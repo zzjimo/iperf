@@ -123,6 +123,8 @@
 #	define __LITTLE_ENDIAN LITTLE_ENDIAN
 #	define __PDP_ENDIAN    PDP_ENDIAN
 
+#elif defined(__ANDROID__)
+#   include <endian.h>
 #else
 
 // Unsupported platforms.
